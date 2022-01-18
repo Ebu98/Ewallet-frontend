@@ -1,12 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Col, Container, Row, Card } from "react-bootstrap";
 
 const Admin = () => {
-  const [inputs, setInputs] = useState({
-    currency: "",
-    value: 0.0,
-    action: "fund",
-  });
+  // const [inputs, setInputs] = useState({
+  //   currency: "",
+  //   value: 0.0,
+  //   action: "fund",
+  // });
   return (
     <Container className="p-3">
       <Row>
