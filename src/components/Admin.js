@@ -25,11 +25,13 @@ const Admin = () => {
           <Card>
             <Card.Body>
               <Card.Title>Ebu98@gmail.com</Card.Title>
-              <Card.Subtitle>(Ebuka)</Card.Subtitle>
+              <Card.Subtitle>
+                (Ebuka) <Card.Link href="/">Fund</Card.Link>
+              </Card.Subtitle>
               <br />
               <Card.Text>Elite</Card.Text>
               <Card.Link onClick={() => {}}>Demote</Card.Link>
-              <Card.Link href="/">Fund</Card.Link>
+              <Card.Link onClick={() => {}}>Change default wallet</Card.Link>
             </Card.Body>
           </Card>
         </Col>
@@ -37,11 +39,14 @@ const Admin = () => {
           <Card>
             <Card.Body>
               <Card.Title>Chukwudieze97@gmail.com</Card.Title>
-              <Card.Subtitle>(Chukwudi)</Card.Subtitle>
+              <Card.Subtitle>
+                (Chukwudi) <Card.Link href="/">Fund</Card.Link>
+              </Card.Subtitle>
+
               <br />
               <Card.Text>Elite</Card.Text>
               <Card.Link onClick={() => {}}>Demote</Card.Link>
-              <Card.Link href="/">Fund</Card.Link>
+              <Card.Link onClick={() => {}}>Change default wallet</Card.Link>
             </Card.Body>
           </Card>
         </Col>

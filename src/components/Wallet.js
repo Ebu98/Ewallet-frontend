@@ -21,6 +21,7 @@ const Wallet = () => {
   const [wallets, setWallets] = useState([]);
   const [isUpdate, setIsUpdate] = useState(false);
   const [error, setError] = useState({});
+  const [user, setUser] = useState({});
   const [id, setId] = useState(1);
 
   const handleClose = () => {
@@ -105,7 +106,8 @@ const Wallet = () => {
             Authorization: `Token ${token}`,
           },
         });
-        setWallets(data);
+        setUser(data.user)
+        setWallets(data.wallets);
       } catch (err) {
         createError(err);
       }
@@ -119,8 +121,8 @@ const Wallet = () => {
           <h4>Ewallet</h4>
         </Col>
         <Col>
-          <h6 style={{ textAlign: "center" }}>Codex</h6>
-          <p style={{ textAlign: "center" }}>(Noob)</p>
+          <h6 style={{ textAlign: "center" }}>{user.username}</h6>
+          <p style={{ textAlign: "center" }}>({user.user_type})</p>
         </Col>
         <Col className="d-flex justify-content-end">
           <Button style={{ height: "50px" }} onClick={handleShow}>

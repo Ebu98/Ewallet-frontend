@@ -11,6 +11,7 @@ function App() {
       <Route path="register" exact element={<Signup />} />
       <Route path="login" exact element={<Login />} />
       <Route path="admin" exact element={<Admin />} />
+      <Route path="/user/:id" exact element={<Wallet />} />
     </Routes>
   );
 }
